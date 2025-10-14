@@ -1,7 +1,7 @@
 # Business Analytics with Excel - Statistical and Forecasting Techniques
 
 ### **Overview**
-This project applies core data analysis techniques in Microsoft Excel — including A/B Testing, ANOVA, Regression, Correlation, and Forecasting — to demonstrate end-to-end analytical reasoning for business decision-making. It reflects foundational skills from the **Data Science (Business Analytics Track)** program at **Arizona State University**.
+This project applies core data analysis techniques in Microsoft Excel - including A/B Testing, ANOVA, Regression, Correlation, and Forecasting - to demonstrate end-to-end analytical reasoning for business decision-making. It reflects foundational skills from the **Data Science (Business Analytics Track)** program at **Arizona State University**.
 
 
 ## **1. Objective**
@@ -11,7 +11,7 @@ The project explores how data-driven insights can support marketing, sales, and 
 
 ## **2. Dataset**
 **Name:** Sample Superstore Sales Dataset  
-**Source:** [Tableau Community — Sample Superstore Excel File](https://community.tableau.com/s/question/0D54T00000G551cSAB/sample-superstore-sales-excelxls)  
+**Source:** [Tableau Community - Sample Superstore Excel File](https://community.tableau.com/s/question/0D54T00000G551cSAB/sample-superstore-sales-excelxls)  
 **Format:** Microsoft Excel (.xls)  
 
 **Description:**  
@@ -22,7 +22,7 @@ The dataset simulates retail operations for an office supply and furniture compa
 - **Geography:** Country, State, Region, and City  
 
 **Why It’s Chosen:**  
-This dataset is widely used in business analytics education and professional visualization tools (like Tableau). It provides an excellent foundation for performing A/B testing, ANOVA, regression, and forecasting — all within realistic business contexts.
+This dataset is widely used in business analytics education and professional visualization tools (like Tableau). It provides an excellent foundation for performing A/B testing, ANOVA, regression, and forecasting - all within realistic business contexts.
 
 ## **3. Analytical Techniques**
 
@@ -59,7 +59,7 @@ This dataset is widely used in business analytics education and professional vis
 
 
 ### **Outcome**
-This project demonstrates the full cycle of data analysis and business interpretation using Excel — from exploration and hypothesis testing to prediction and visualization.  
+This project demonstrates the full cycle of data analysis and business interpretation using Excel - from exploration and hypothesis testing to prediction and visualization.  
 It bridges mathematical reasoning with real-world business analytics, aligning academic learning with practical applications.
 
 

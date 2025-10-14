@@ -1,4 +1,4 @@
-# Business Analytics with Excel — Statistical and Forecasting Techniques
+# Business Analytics with Excel - Statistical and Forecasting Techniques
 
 ### **Overview**
 This project applies core data analysis techniques in Microsoft Excel — including A/B Testing, ANOVA, Regression, Correlation, and Forecasting — to demonstrate end-to-end analytical reasoning for business decision-making. It reflects foundational skills from the **Data Science (Business Analytics Track)** program at **Arizona State University**.

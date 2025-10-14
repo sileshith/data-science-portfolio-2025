@@ -1,15 +1,15 @@
-# Business Analytics with Excel - Statistical and Forecasting Techniques
+## Business Analytics with Excel - Statistical and Forecasting Techniques
 
-### **Overview**
+#### **Overview**
 This project applies core data analysis techniques in Microsoft Excel - including A/B Testing, ANOVA, Regression, Correlation, and Forecasting - to demonstrate end-to-end analytical reasoning for business decision-making. It reflects foundational skills from the **Data Science (Business Analytics Track)** program at **Arizona State University**.
 
 
-## **1. Objective**
+### **1. Objective**
 To analyze real-world retail business data using statistical and predictive methods in Excel.  
 The project explores how data-driven insights can support marketing, sales, and operations decisions.
 
 
-## **2. Dataset**
+### **2. Dataset**
 **Name:** Sample Superstore Sales Dataset  
 **Source:** [Tableau Community - Sample Superstore Excel File](https://community.tableau.com/s/question/0D54T00000G551cSAB/sample-superstore-sales-excelxls)  
 **Format:** Microsoft Excel (.xls)  
@@ -24,7 +24,7 @@ The dataset simulates retail operations for an office supply and furniture compa
 **Why It’s Chosen:**  
 This dataset is widely used in business analytics education and professional visualization tools (like Tableau). It provides an excellent foundation for performing A/B testing, ANOVA, regression, and forecasting - all within realistic business contexts.
 
-## **3. Analytical Techniques**
+### **3. Analytical Techniques**
 
 | Method | Excel Tool | Purpose |
 |--------|-------------|----------|
@@ -35,7 +35,7 @@ This dataset is widely used in business analytics education and professional vis
 | **Forecasting** | FORECAST.LINEAR / FORECAST.ETS | Predict future sales trends using time-series data |
 
 
-## **4. Expected Deliverables**
+### **4. Expected Deliverables**
 - **Excel Workbook** containing:
   - Cleaned and formatted dataset  
   - Descriptive statistics and correlation matrix  
@@ -48,7 +48,7 @@ This dataset is widely used in business analytics education and professional vis
   - Business implications and insights  
 
 
-## **5. Skills Demonstrated**
+### **5. Skills Demonstrated**
 - Data cleaning and preparation in Excel  
 - Statistical hypothesis testing (t-Test, ANOVA)  
 - Predictive modeling (Regression)  
@@ -58,7 +58,7 @@ This dataset is widely used in business analytics education and professional vis
 
 
 
-### **Outcome**
+#### **Outcome**
 This project demonstrates the full cycle of data analysis and business interpretation using Excel - from exploration and hypothesis testing to prediction and visualization.  
 It bridges mathematical reasoning with real-world business analytics, aligning academic learning with practical applications.
 

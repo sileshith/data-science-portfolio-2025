@@ -1,5 +1,5 @@
 
-# **Business Analytics with Excel — Statistical and Forecasting Techniques**
+## **Business Analytics with Excel - Statistical and Forecasting Techniques**
 
 ### **Overview**
 
@@ -8,14 +8,14 @@ This project applies end-to-end data analysis techniques in Microsoft Excel, inc
 The analysis reflects foundational learning outcomes from the **Data Science (Business Analytics Track)** program at **Arizona State University**, bridging mathematical reasoning with applied business strategy.
 
 
-## **1. Objective**
+### **1. Objective**
 
 To analyze real-world retail data using Excel’s analytical and statistical tools, identifying insights that drive **profit optimization, pricing discipline, and operational efficiency**.
 
 This analysis explores how data-driven insights support **marketing, sales, and regional business decisions**, from exploratory statistics to predictive modeling and forecasting.
 
 
-## **2. Dataset**
+### **2. Dataset**
 
 **Name:** Sample Superstore Sales Dataset
 **Source:** [Tableau Community — Sample Superstore Excel File](https://community.tableau.com/s/question/0D54T00000G551cSAB/sample-superstore-sales-excelxls)
@@ -35,7 +35,7 @@ This dataset is widely used in analytics and visualization education (Tableau, E
 It’s ideal for demonstrating analytical reasoning and business insight through Excel-based testing, modeling, and forecasting.
 
 
-## **3. Analytical Techniques**
+### **3. Analytical Techniques**
 
 | **Method**                    | **Excel Tool**                      | **Purpose**                                              |
 | ----------------------------- | ----------------------------------- | -------------------------------------------------------- |
@@ -46,7 +46,7 @@ It’s ideal for demonstrating analytical reasoning and business insight through
 | **Forecasting**               | FORECAST.LINEAR / Moving Average    | Estimate future sales trends over time                   |
 
 
-## **4. Descriptive Statistics**
+### **4. Descriptive Statistics**
 
 **Goal:** Identify key distribution patterns in Sales, Profit, Discount, and Quantity.
 **Tool:** Analysis ToolPak → Descriptive Statistics & Correlation.
@@ -63,7 +63,7 @@ Focus pricing strategy on sustainable margins rather than high-volume, low-profi
 Flag high-discount transactions for managerial review to minimize profit erosion.
 
 
-## **5. Pivot Table Analysis**
+### **5. Pivot Table Analysis**
 
 **A. Sales and Profit by Category and Region**
 
@@ -82,9 +82,9 @@ Flag high-discount transactions for managerial review to minimize profit erosion
   **Recommendation:** Scale shipping resources during forecasted peaks; review Same-Day profitability for efficiency optimization.
 
 
-## **6. A/B Testing**
+### **6. A/B Testing**
 
-### **Purpose**
+#### **Purpose**
 
 To statistically compare key business segments and identify differences in profitability and discount behavior.
 
@@ -94,13 +94,13 @@ To statistically compare key business segments and identify differences in profi
 | **A/B Test 2: Consumer vs. Corporate**  | Customer Segment            | Average Discount & Profit per Order | Consumers receive higher discounts without higher profit | Narrow discount range for Consumer segment; focus on profit-based promotions            |
 | **A/B Test 3: Low vs. High Discount**   | ≤ 20% vs. > 20% Discount    | Profit per Order                    | High-discount orders yield lower average profit          | Implement 20% discount cap; require approval above threshold                            |
 
-### **Conclusion**
+#### **Conclusion**
 
 Among all tests, **East vs. West Profit Comparison** was selected as the **primary high-impact A/B test**.
 It ties directly to regional operations, balanced group sizes, and actionable strategy outcomes that affect resource allocation, marketing, and supply chain optimization.
 
 
-## **7. ANOVA — Comparing Mean Sales Across Categories**
+### **7. ANOVA — Comparing Mean Sales Across Categories**
 
 **Objective:** Determine if product categories differ significantly in mean order value.
 **Tool:** ToolPak → ANOVA: Single Factor.
@@ -109,7 +109,7 @@ It ties directly to regional operations, balanced group sizes, and actionable st
 **Recommendation:** Expand Technology portfolio and prioritize high-value inventory.
 
 
-## **8. Regression Analysis — Profit Drivers**
+### **8. Regression Analysis - Profit Drivers**
 
 **Model:** Profit = β₀ + β₁(Sales) + β₂(Discount) + β₃(Quantity)
 **Tool:** ToolPak → Regression Analysis.
@@ -124,7 +124,7 @@ It ties directly to regional operations, balanced group sizes, and actionable st
 Limit discounts to maintain profit margins; focus on high-sales, low-discount items for sustainable growth.
 
 
-## **9. Forecasting**
+### **9. Forecasting**
 
 **Goal:** Predict near-term sales using time-based trends.
 **Tool:** FORECAST.LINEAR / 3-Month Moving Average.
@@ -138,7 +138,7 @@ Plan marketing campaigns and inventory buildup around predictable seasonal surge
 Use a rolling 3-month forecast to guide staffing and replenishment schedules.
 
 
-## **10. Expected Deliverables**
+### **10. Expected Deliverables**
 
 * **Excel Workbook** containing:
 
@@ -154,7 +154,7 @@ Use a rolling 3-month forecast to guide staffing and replenishment schedules.
 
 
 
-## **11. Skills Demonstrated**
+### **11. Skills Demonstrated**
 
 * Advanced Excel analytics (Analysis ToolPak, PivotTables, Forecasting)
 * Statistical hypothesis testing (t-Test, ANOVA)
@@ -165,10 +165,10 @@ Use a rolling 3-month forecast to guide staffing and replenishment schedules.
 
 
 
-### **Outcome**
+#### **Outcome**
 
 This project demonstrates a complete analytical workflow using Excel, from data preparation to actionable business recommendations.
-It connects statistical analysis with operational decision-making — **transforming descriptive metrics into strategic insights**.
+It connects statistical analysis with operational decision-making - **transforming descriptive metrics into strategic insights**.
 
 Key outcomes:
 
@@ -178,7 +178,7 @@ Key outcomes:
 
 
 
-### **Author**
+#### **Author**
 
 **Sileshi T. Hirpa**
 Data Science (Business Analytics Track) — *Arizona State University*

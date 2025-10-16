@@ -179,7 +179,7 @@ Key outcomes:
 
 #### **Author**  
 **Sileshi T. Hirpa**   
-Data Science (Business Analytics Track) — *Arizona State University*   
+Data Science (Business Analytics Track) - *Arizona State University*   
 San Francisco Bay Area, CA    
 [hirpast@gmail.com](mailto:hirpast@gmail.com)   
 [LinkedIn Profile](https://www.linkedin.com/in/sileshi-hirpa)   

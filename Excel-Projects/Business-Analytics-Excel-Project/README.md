@@ -1,5 +1,5 @@
 
-## **Business Analytics with Excel - Statistical and Forecasting Techniques**
+## **Business Analytics with Excel - Sample Superstore Sales Dataset**
 
 ### **Overview**
 
@@ -30,9 +30,7 @@ It includes:
 * **Sales metrics:** Sales, Quantity, Discount, Profit
 * **Geography:** Country, State, Region, and City
 
-**Why It’s Chosen:**
-This dataset is widely used in analytics and visualization education (Tableau, Excel, Power BI).
-It’s ideal for demonstrating analytical reasoning and business insight through Excel-based testing, modeling, and forecasting.
+I chose this dataset for demonstrating analytical reasoning and business insight through Excel-based testing, modeling, and forecasting.
 
 
 ### **3. Analytical Techniques**
@@ -48,7 +46,7 @@ It’s ideal for demonstrating analytical reasoning and business insight through
 
 ### **4. Descriptive Statistics**
 
-**Goal:** Identify key distribution patterns in Sales, Profit, Discount, and Quantity.
+**Goal:** Identify key distribution patterns in Sales, Profit, Discount, and Quantity.  
 **Tool:** Analysis ToolPak → Descriptive Statistics & Correlation.
 
 **Findings:**
@@ -106,7 +104,6 @@ It ties directly to regional operations, balanced group sizes, and actionable st
 **Tool:** ToolPak → ANOVA: Single Factor.
 **Result:** p < 0.05 → mean sales differ significantly across categories.
 **Interpretation:** Technology category generates higher sales per order. 
-
 **Recommendation:** Expand Technology portfolio and prioritize high-value inventory.
 
 
@@ -127,15 +124,16 @@ Limit discounts to maintain profit margins; focus on high-sales, low-discount it
 
 ### **9. Forecasting**
 
-**Goal:** Predict near-term sales using time-based trends.
-**Tool:** FORECAST.LINEAR / 3-Month Moving Average.
+**Goal:** Predict near-term sales using time-based trends.  
+**Tool:** FORECAST.LINEAR / 3-Month Moving Average.  
+
 **Findings:**
 
 * Monthly sales show cyclical peaks mid-year.
 * Clear upward trend over time.
 
 **Recommendation:**
-Plan marketing campaigns and inventory buildup around predictable seasonal surges.
+Plan marketing campaigns and inventory buildup around predictable seasonal surges.  
 Use a rolling 3-month forecast to guide staffing and replenishment schedules.
 
 

@@ -100,12 +100,13 @@ Among all tests, **East vs. West Profit Comparison** was selected as the **prima
 It ties directly to regional operations, balanced group sizes, and actionable strategy outcomes that affect resource allocation, marketing, and supply chain optimization.
 
 
-### **7. ANOVA — Comparing Mean Sales Across Categories**
+### **7. ANOVA - Comparing Mean Sales Across Categories**
 
 **Objective:** Determine if product categories differ significantly in mean order value.
 **Tool:** ToolPak → ANOVA: Single Factor.
 **Result:** p < 0.05 → mean sales differ significantly across categories.
-**Interpretation:** Technology category generates higher sales per order.
+**Interpretation:** Technology category generates higher sales per order. 
+
 **Recommendation:** Expand Technology portfolio and prioritize high-value inventory.
 
 

@@ -18,7 +18,7 @@ This analysis explores how data-driven insights support **marketing, sales, and 
 ### **2. Dataset**
 
 **Name:** Sample Superstore Sales Dataset
-**Source:** [Tableau Community — Sample Superstore Excel File](https://community.tableau.com/s/question/0D54T00000G551cSAB/sample-superstore-sales-excelxls)
+**Source:** [Tableau Community — Sample Superstore Excel File](https://community.tableau.com/s/question/0D54T00000G551cSAB/sample-superstore-sales-excelxls)  
 **Format:** Microsoft Excel (.xls)
 
 **Description:**

@@ -1,6 +1,6 @@
 ## Superstore Performance Analytics & Forecasting System
 
-**An Excel and Tableau Business Analytics Project**
+**An Excel and Tableau Business Analytics Project**  
 *By Sileshi T. Hirpa (2025)*
 
 
@@ -77,7 +77,8 @@ Superstore leadership aims to identify key drivers of profitability and forecast
 * Standard Class dominates sales volume and shows seasonal spikes in Q4.
 * Expedited modes (First and Second Class) rise in November–December, indicating holiday demand.
 
-**Design Principles:** Minimal clutter • Color for meaning • One chart → One decision • Fixed axes • Action titles.
+**Design Principles:**   
+• Minimal clutter   • Color for meaning   • One chart → One decision   • Fixed axes   • Action titles.
 
 
 ### Strategic Recommendations

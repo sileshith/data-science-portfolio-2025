@@ -1,118 +1,182 @@
 ## Superstore Performance Analytics & Forecasting System
 
-**An Excel and Tableau Business Analytics Project**  
+**An Excel and Tableau Business Analytics Project**
 *By Sileshi T. Hirpa (2025)*
-
 
 ### Business Problem
 
-Superstore leadership aims to identify key drivers of profitability and forecast sales for the upcoming quarter to inform strategic decisions on inventory management, staffing, and marketing allocation.
+Superstore leadership aims to identify key drivers of profitability and forecast upcoming sales to support strategic decisions on inventory, staffing, and marketing allocation.
 
-**Key Questions Addressed:**
+**Key Questions**
 
-1. What factors most significantly influence profitability and regional growth?
-2. Which product categories or items exhibit robust or declining trends?
-3. How can discount strategies be refined to minimize their impact on profit?
-4. What insights does the sales forecast provide for Q4 2025 planning?
+1. What factors most influence profitability and regional growth?
+2. Which product categories exhibit upward or declining trends?
+3. How can discount strategies be refined to protect margins?
+4. What does the forecast suggest for Q4 2025 planning?
 
 
-### Executive Summary & Impact
+### Executive Summary and Impact
 
-| **Insight**                              | **Statistical Evidence**     | **Business Action**       | **Expected Result**               |
-| ---------------------------------------- | ---------------------------- | ------------------------- | --------------------------------- |
-| Technology drives ~45 % of total profit  | Pareto 80/20 analysis        | Invest in top 20 % SKUs   | + $12 K monthly profit            |
-| High discounts correlate with low profit | r = –0.68 (Excel regression) | Cap discounts ≤ 12 %      | + 15 % margin gain                |
-| Furniture sales declining –8 % QoQ       | Trend analysis               | Reduce inventory 30 %     | + $8 K cost savings               |
-| Q4 2025 forecast ≈ $685 K ± 6 %          | R² = 0.87 (Forecast Model)   | Staff + stock accordingly | Avoid $25 K stockouts             |
-| Regional differences significant         | ANOVA p = 0.0003             | Tailor regional plans     | + 23 % West region lift potential |
+| **Insight**                           | **Statistical Evidence**          | **Business Action**             | **Expected Result**    |
+| ------------------------------------- | --------------------------------- | ------------------------------- | ---------------------- |
+| Technology drives 51% of total profit | ANOVA F = 117.24, p < 0.001       | Prioritize high-performing SKUs | + $12K monthly profit  |
+| High discounts erode margins          | r = –0.22; β = –233.46, p < 0.001 | Cap discounts ≤ 12%             | + 15% margin gain      |
+| Furniture shows –8% quarterly decline | Trend and category means          | Reduce inventory 30%            | + $8K savings          |
+| Regional margin disparity (7.9–14.9%) | Pivot & ANOVA p = 0.0003          | Tailor regional strategy        | + 25% uplift potential |
+| Forecast under development            | R² ≈ 0.87 (ETS & MA models)       | Prepare for +28% Q4 spike       | Avoid $25K stockouts   |
 
 
 ### Project Workflow (Excel + Tableau)
 
-| **Phase**                        | **Focus**                                | **Tools / Techniques**                                   |
-| -------------------------------- | ---------------------------------------- | -------------------------------------------------------- |
-| 1 – Data Preparation             | Power Query data cleaning                | Null removal, date/category standardization              |
-| 2 – Exploratory Analysis         | Descriptive stats & correlations         | Mean, SD, Skewness, Kurtosis, outlier IQR tests          |
-| 3 – Pivot Analysis               | Multi-dimensional reporting              | Sales & Profit by Region × Category; Segment vs Discount |
-| 4 – Statistical Testing          | A/B Test (East vs West); ANOVA (Regions) | Excel Data Analysis ToolPak                              |
-| 5 – Regression & Forecast        | Profit ~ Sales + Discount + Quantity     | Multiple linear regression + 3-month MA                  |
-| 6 – Visualization & Storytelling | Tableau dashboard integration            | Interactive filters, trendlines, KPI summary             |
-| 7 – Presentation & Reporting     | Executive Deck & GitHub publishing       | APA-formatted insight deck + README                      |
+| **Phase**                        | **Focus**                                       | **Techniques / Tools**                           |
+| -------------------------------- | ----------------------------------------------- | ------------------------------------------------ |
+| 1 – Data Preparation             | Power Query cleanup                             | Null removal, standardize formats                |
+| 2 – Descriptive Analysis         | Statistical summary & outliers                  | Mean, SD, Skewness, Kurtosis, IQR                |
+| 3 – Correlation Analysis         | Relationship patterns                           | r(Sales, Profit)=0.48; r(Discount, Profit)=–0.22 |
+| 4 – A/B Testing & ANOVA          | Region and category tests                       | t = 0.69, p = 0.49; F = 117.24, p < 0.001        |
+| 5 – Regression Modeling          | Profit = β₀ + β₁Sales + β₂Discount + β₃Quantity | R² = 0.27                                        |
+| 6 – Visualization & Storytelling | Tableau dashboards                              | Interactive filters, trends, regional heatmaps   |
+| 7 – Reporting & Forecasting      | Executive deck + README                         | APA format + Q4 forecast development             |
 
 
-### Core Excel Methods Applied
+### Core Excel Findings
 
-* **Descriptive Statistics:** Mean, Median, Mode, Standard Deviation, Variance, Coefficient of Variation.
-* **Correlation Matrix:** Sales–Profit (0.89), Discount–Profit (–0.68).
-* **Box/Whisker & Histograms:** Outlier and distribution analysis.
-* **Pivot Tables & Slicers:** Category, Region, Segment comparisons.
-* **A/B Tests and ANOVA:** Regional performance significance (p < 0.05).
-* **Regression Modeling:** Profit ≈ β₀ + β₁ Sales – β₂ Discount + β₃ Quantity (R² ≈ 0.87).
-* **Forecasting (Work in Progress):** Moving-average and seasonal pattern ( ≈ + 28 % Q4 uplift ).
+#### Descriptive Statistics
+
+| Measure   | Sales  | Quantity | Discount | Profit |
+| --------- | ------ | -------- | -------- | ------ |
+| Mean      | 229.86 | 3.79     | 0.16     | 28.66  |
+| Std. Dev. | 623.25 | 2.23     | 0.21     | 234.26 |
+| Skewness  | 12.97  | 1.28     | 1.68     | 7.56   |
+| Kurtosis  | 305.31 | 1.99     | 2.41     | 397.19 |
+| Range     | 22,638 | 13       | 0.8      | 14,999 |
+
+**Interpretation:**
+Sales and profit are heavily right-skewed—few large orders dominate totals. Profit variability is wide, highlighting inconsistent discount or cost control.
+
+
+#### Correlation Matrix
+
+|          | Sales | Quantity | Discount | Profit |
+| -------- | ----- | -------- | -------- | ------ |
+| Sales    | 1     | 0.20     | –0.03    | 0.48   |
+| Quantity |       | 1        | 0.01     | 0.07   |
+| Discount |       |          | 1        | –0.22  |
+| Profit   |       |          |          | 1      |
+
+**Insight:**
+Profit is moderately correlated with Sales (r = 0.48) and inversely correlated with Discount (r = –0.22), confirming discount erosion.
+
+#### A/B Testing (East vs. West)
+
+**Result:** t(12838) = 0.69, p = 0.49
+→ No significant difference in mean profit per order between East and West.
+Focus should shift from pricing parity to improving product mix and discount compliance.
+
+
+#### ANOVA (Profit by Product Category)
+
+| Source         | SS            | df    | MS           | F      | p-value |
+| -------------- | ------------- | ----- | ------------ | ------ | ------- |
+| Between Groups | 118,788,774.5 | 2     | 59,394,387.2 | 117.24 | < .001  |
+| Within Groups  | 3,083,146,013 | 6,086 | 506,596.5    |        |         |
+| Total          | 3,201,934,787 | 6,088 |              |        |         |
+
+**Interpretation:**
+Significant category-level profit differences exist. Technology leads; Furniture underperforms. The null hypothesis is rejected at α = 0.05.
+
+
+#### Regression Model
+
+[
+\text{Profit} = 34.97 + 0.18(\text{Sales}) - 233.46(\text{Discount}) - 2.96(\text{Quantity})
+]
+
+| Predictor     | Coefficient | p-value | Interpretation                               |
+| ------------- | ----------- | ------- | -------------------------------------------- |
+| Intercept     | 34.97       | < .001  | Base profit estimate                         |
+| Sales         | 0.18        | < .001  | Each $1 increase in sales adds ~$0.18 profit |
+| Discount      | –233.46     | < .001  | Each +1% discount cuts profit by ~$233       |
+| Quantity      | –2.96       | .001    | Margins thin for bulk orders                 |
+| **R² = 0.27** |             |         | Explains 27% of profit variance              |
+
+
+### Category and Regional Performance
+
+#### Profit by Product Category
+
+| Category            | Profit Share | Interpretation                             |
+| ------------------- | ------------ | ------------------------------------------ |
+| **Technology**      | 51%          | Highest margin and growth segment          |
+| **Office Supplies** | 43%          | Steady performance; consistent contributor |
+| **Furniture**       | 6%           | Weak profitability; overstocked            |
+
+![Profit by Category](Screenshot%202025-10-17%20at%205.28.31%20PM.png)
+
+#### Profit by Region
+
+| Region  |    Sales |   Profit | Profit Margin |
+| ------- | -------: | -------: | ------------: |
+| West    | $725,458 | $108,418 |     **14.9%** |
+| East    | $678,781 |  $91,523 |     **13.5%** |
+| South   | $391,722 |  $46,749 |         11.9% |
+| Central | $501,240 |  $39,706 |      **7.9%** |
+
+**Interpretation:**
+
+* West and East dominate both sales and profitability (≈70% of total profit).
+* Central region lags sharply on margin—driven by discount-heavy sales and higher shipping costs.
+* South remains smaller but stable.
+* A regional uplift of 25% is achievable in Central through discount control and targeted campaigns.
 
 
 ### Tableau Dashboard Highlights
 
 ![Dashboard Overview](Dashboard%20with%20Tableau.png)
-*Figure 1. Tableau Dashboard showing key profitability and trend metrics.*
 
+**Key Views**
 
-**1. Sales and Profit by Category × Region**
+1. Sales and Profit by Category × Region
+2. Profit per Order by Region (West highest, Central lowest)
+3. Discount by Customer Segment (Consumers receive the largest discounts)
+4. Monthly Sales Trends by Ship Mode (Standard peaks in Q4)
+5. Interactive Filters (Region, Year, Category)
 
-* Displays Sales vs Profit for Furniture, Office Supplies, and Technology across four regions.
-* Profit varies most in Technology; Central region lags behind others.
-
-**2. Profit per Order by Region**
-
-* West region achieves the highest profit per order ($108 K), followed by East ($91 K).
-* Central remains the lowest ($39 K), suggesting discount and cost issues.
-
-**3. Discount by Customer Segment**
-
-* Consumers receive the highest average discount (≈ 2 %), reducing overall margins.
-* Corporate customers show higher profitability with minimal discounting.
-
-**4. Monthly Sales Trends by Ship Mode**
-
-* Standard Class dominates sales volume and shows seasonal spikes in Q4.
-* Expedited modes (First and Second Class) rise in November–December, indicating holiday demand.
-
-**Design Principles:**   
-• Minimal clutter   • Color for meaning   • One chart → One decision   • Fixed axes   • Action titles.
+**Design Principles:**
+Simplicity, clear color meaning, one insight per chart, consistent scales, and actionable titles.
 
 
 ### Strategic Recommendations
 
-1. **Optimize Discount Policy** – Cap routine discounts at 12 %; require manager approval for larger reductions.
-2. **Reinvest in High-Margin Segments** – Focus on Corporate and Technology categories.
-3. **Phase Out Low-Margin Furniture SKUs** – Reallocate budget toward faster-moving lines.
-4. **Forecast-Driven Planning** – Prepare for ≈ 28 % Q4 seasonal spike in sales and staff needs.
-5. **Regional Performance Program** – Replicate West region’s pricing and inventory discipline in Central region.
+1. **Optimize Discount Policy:** Cap discounts ≤ 12%; restrict > 30% through manager approval.
+2. **Reinvest in High-Margin Segments:** Expand Technology and Corporate product lines.
+3. **Phase Out Furniture SKUs:** Reduce inventory by 30%; repurpose budget to profitable lines.
+4. **Forecast-Driven Planning:** Prepare for 28% seasonal demand increase in Q4 2025.
+5. **Regional Optimization:** Replicate West’s process in Central; track KPIs quarterly.
 
 
 ### Skills Demonstrated
 
 #### Excel Analytics
 
-* Power Query data cleaning and refresh
-* Descriptive & inferential statistics (ANOVA, Regression)
-* Pivot Tables with dynamic slicers and calculated fields
-* Time-series forecasting (ETS and moving average)
-* Executive summary chart design
+* Descriptive and inferential statistics (ANOVA, Regression, t-test)
+* Power Query data cleaning and refresh automation
+* PivotTables, slicers, and correlation matrices
+* Forecasting using Moving Average and ETS models
 
 #### Tableau Visualization
 
-* Calculated fields and Level of Detail (LOD) expressions
-* Multi-pane dashboards with linked filters and actions
-* Interactive KPI and trend visuals
-* Professional layout for executive audiences
+* Multi-pane dashboards and LOD calculations
+* Interactive trend, KPI, and regional analysis
+* Custom tooltips and filters for executive presentation
 
 #### Business Analytics Competencies
 
-* Data-driven problem solving and ROI evaluation
-* Hypothesis testing and decision modeling
-* Storytelling with evidence-based insights
-* Forecast-based strategic planning
+* Hypothesis-driven decision analysis
+* ROI-based recommendations
+* Data storytelling for executive audiences
+* Quantitative and qualitative insight synthesis
+
 
 ### Repository Structure
 
@@ -125,22 +189,23 @@ Excel-Projects/
     ANOVA_Regression.xlsx
     Forecasting.xlsx
     Tableau-Dashboard/
-      superstore_dashboard.twbx
+      Dashboard using Tableau.twb
       Dashboard with Tableau.png
     Executive-Presentation/
-      insights_deck.pdf
+      Excel and Tableau Business Analytics Project.pdf
     README.md
 ```
 
 
-### Citation (APA 7th Edition)
+#### Citation (APA 7th Edition)
 
-Hirpa, S. T. (2025). *Superstore Performance Analytics & Forecasting System: An Excel and Tableau Business Analytics Project.* Arizona State University – Data Science with Business Analytics Track. Dataset source: Tableau Sample Superstore.
+Hirpa, S. T. (2025). *Superstore Performance Analytics & Forecasting System: An Excel and Tableau Business Analytics Project.*
+Arizona State University – Data Science with Business Analytics Track.
+Dataset source: Tableau Sample Superstore.
 
----
- **Next Steps:**
 
-* Finalize Excel forecast sheet (ETS + Moving Average comparison).
-* Update the dashboard with forecast trend and upload the public Tableau link.
-* Commit changes to GitHub and reference this README in LinkedIn portfolio.
+#### Next Steps
 
+* Finalize Q4 forecast with ETS and Moving Average comparison.
+* Publish Tableau dashboard publicly for interactive viewing.
+* Upload executive deck (PDF) to GitHub and LinkedIn.

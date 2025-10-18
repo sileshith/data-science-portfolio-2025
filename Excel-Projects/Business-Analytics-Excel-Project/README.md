@@ -111,7 +111,7 @@ Significant category-level profit differences exist. Technology leads; Furniture
 | **Office Supplies** | 43%          | Steady performance; consistent contributor |
 | **Furniture**       | 6%           | Weak profitability; overstocked            |
 
-![Profit by Category](Screenshot%202025-10-17%20at%205.28.31%20PM.png)
+![Profit by Category](Profit%20by%20Category.png)
 
 #### Profit by Region
 
